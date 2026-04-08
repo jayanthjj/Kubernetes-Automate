@@ -1,0 +1,21 @@
+# OS
+.DS_Store
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+
+# IDE
+.vscode/
+
+# Copilot instructions (local only)
+.github/copilot-instructions.md
+
+# Study notes (local only)
+notes/
+
+# Empty placeholder dirs
+helm/
+infra/
+scripts/
