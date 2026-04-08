@@ -54,7 +54,11 @@ def ready():
 
 @app.get("/version")
 def version():
-    return {"version": os.getenv("APP_VERSION", "unknown")}
+    import socket
+    return {
+        "version": os.getenv("APP_VERSION", "unknown"),
+        "hostname": socket.gethostname()
+    }
 
 
 @app.get("/books")
